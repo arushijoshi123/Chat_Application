@@ -40,7 +40,7 @@ function CreateGroups() {
     };
 
     axios
-      .get("http://localhost:5000/user/fetchUsers", config)
+      .get("https://chat-app-backend-pv1s.onrender.com/user/fetchUsers", config)
       .then((response) => {
         console.log(" UData refreshed in Users panel ");
         setUsersList(response.data);
