@@ -38,7 +38,7 @@ function Users_Groups() {
       },
     };
     axios
-      .get("http://localhost:5000/user/fetchUsers", config)
+      .get("https://chat-app-backend-pv1s.onrender.com/user/fetchUsers", config)
       .then((response) => {
         console.log(" UData refreshed in Users panel ");
         setUsers(response.data);
@@ -92,7 +92,7 @@ function Users_Groups() {
                   };
                   axios
                     .post(
-                      "http://localhost:5000/chat/",
+                      "https://chat-app-backend-pv1s.onrender.com/chat/",
                       {
                         userId: user._id,
                       },

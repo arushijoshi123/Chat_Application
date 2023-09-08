@@ -24,7 +24,7 @@ function Login() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/user/login",
+        "https://chat-app-backend-pv1s.onrender.com/user/login",
         formData
       );
       console.log(response.data);

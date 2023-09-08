@@ -64,7 +64,7 @@ function CreateGroups() {
 
     axios
       .post(
-        "http://localhost:5000/chat/createGroup",
+        "https://chat-app-backend-pv1s.onrender.com/chat/createGroup",
         {
           name: groupName,
           admin: token, // Logged-in user as admin

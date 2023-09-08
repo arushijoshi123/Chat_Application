@@ -23,11 +23,14 @@ function Signup() {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/user/signup", {
-        name,
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://chat-app-backend-pv1s.onrender.com/user/signup",
+        {
+          name,
+          email,
+          password,
+        }
+      );
 
       console.log(response.data); // Handle the response from the server
 

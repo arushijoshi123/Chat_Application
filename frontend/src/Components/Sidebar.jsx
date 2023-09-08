@@ -40,10 +40,12 @@ function Sidebar() {
       },
     };
 
-    axios.get("http://localhost:5000/chat/", config).then((response) => {
-      console.log("Data refreshed in sidebar ", response.data);
-      setConversations(response.data);
-    });
+    axios
+      .get("https://chat-app-backend-pv1s.onrender.com/chat/", config)
+      .then((response) => {
+        console.log("Data refreshed in sidebar ", response.data);
+        setConversations(response.data);
+      });
   }, [refresh, token, navigate]);
 
   return (
